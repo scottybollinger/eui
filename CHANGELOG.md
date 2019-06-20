@@ -1,16 +1,48 @@
 ## [`master`](https://github.com/elastic/eui/tree/master)
 
-- Attach `noreferrer` also to links without `target="_blank"` ([#2008](https://github.com/elastic/eui/pull/2008))
-- Convert observer utility components to TypeScript ([#2009](https://github.com/elastic/eui/pull/2009))
-- Convert tool tip components to TypeScript ([#2013](https://github.com/elastic/eui/pull/2013))
+- Changed `EuiNavDrawerFlyout` title from `h5` to `div` ([#2040](https://github.com/elastic/eui/pull/2040))
+- Converted `EuiGlobalToastList` into ARIA live region by adding `role="region"` attribute to add NVDA/JAWS support ([#2055](https://github.com/elastic/eui/pull/2055))
+- Added `magnifyWithMinus` and `magnifyWithPlus` glyphs to `EuiIcon` ([2056](https://github.com/elastic/eui/pull/2056))
+- Added a fully black (no matter the theme) color SASS variable `$euiColorInk` ([2060](https://github.com/elastic/eui/pull/2060))
+- Added `autoFocus` prop to `EuiTabbedContent` ([2062](https://github.com/elastic/eui/pull/2062))
 
 **Bug fixes**
 
+- Fixed proptype for `EuiCopy`'s `children` ([#2048](https://github.com/elastic/eui/pull/2048))
+- Fixed `EuiInMemoryTable` to allow sorting on computed columns ([#2044](https://github.com/elastic/eui/pull/2044))
+- Fixed TypeScript `Toast` member export ([#2052](https://github.com/elastic/eui/pull/2052))
+- Fixed style of readOnly input groups via `EuiFormControlLayout` and `prepend`/`append` ([#2057](https://github.com/elastic/eui/pull/2057))
+
+## [`12.0.0`](https://github.com/elastic/eui/tree/v12.0.0)
+
+- Attached `noreferrer` also to links without `target="_blank"` ([#2008](https://github.com/elastic/eui/pull/2008))
+- Converted observer utility components to TypeScript ([#2009](https://github.com/elastic/eui/pull/2009))
+- Converted tool tip components to TypeScript ([#2013](https://github.com/elastic/eui/pull/2013))
+- Converted `EuiCopy` to TypeScript ([#2016](https://github.com/elastic/eui/pull/2016))
+- Converted badge and token components to TypeScript ([#2026](https://github.com/elastic/eui/pull/2026))
+- Added `magnet` glyph to `EuiIcon` ([2010](https://github.com/elastic/eui/pull/2010))
+- Changed `logoAWS` SVG in `EuiIcon` to work better in dark mode ([#2036](https://github.com/elastic/eui/pull/2036))
+- Converted toast components to TypeScript ([#2032](https://github.com/elastic/eui/pull/2032))
+
+**Bug fixes**
+
+- Fixed `EuiFlyout` scrolling in Safari ([#2033](https://github.com/elastic/eui/pull/2033))
 - Fixed `EuiCallOut` header icon alignment ([#2006](https://github.com/elastic/eui/pull/2006))
+- Fixed `EuiInMemoryTable` sort value persistence through lifecycle updates ([#2035](https://github.com/elastic/eui/pull/2035))
+- Fixed `EuiColorPicker` positioning and keyboard navigation in certain portal contexts ([#2038](https://github.com/elastic/eui/pull/2038))
 
 **Breaking changes**
 
 - Removed explicit dependency on `core-js`, but a global polyfill like `core-js@3` is still required ([#1982](https://github.com/elastic/eui/pull/1982))
+
+## [`11.3.2`](https://github.com/elastic/eui/tree/v11.3.2)
+
+**Note: this release is a backport containing changes originally made in `12.0.0`**
+
+**Bug fixes**
+
+- Fixed `EuiInMemoryTable` sort value persistence through lifecycle updates ([#2035](https://github.com/elastic/eui/pull/2035))
+- Fixed `EuiColorPicker` positioning and keyboard navigation in certain portal contexts ([#2038](https://github.com/elastic/eui/pull/2038))
 
 ## [`11.3.1`](https://github.com/elastic/eui/tree/v11.3.1)
 
